@@ -80,13 +80,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="408.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jah-Ld-zsQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="318.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="321.5"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="itB-m1-a4t">
-                                                <rect key="frame" x="0.0" y="319.5" width="414" height="89"/>
+                                                <rect key="frame" x="0.0" y="322.5" width="414" height="86"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5H-a7-0wz">
-                                                        <rect key="frame" x="20" y="20" width="177" height="49"/>
+                                                        <rect key="frame" x="20" y="20" width="177" height="46"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
                                                         <state key="normal" title="Back"/>
                                                         <variation key="heightClass=compact-widthClass=compact">
@@ -100,7 +100,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsW-qR-lIP">
-                                                        <rect key="frame" x="217" y="20" width="177" height="49"/>
+                                                        <rect key="frame" x="217" y="20" width="177" height="46"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
                                                         <state key="normal" title="Shiny"/>
                                                         <variation key="heightClass=compact-widthClass=compact">
@@ -149,7 +149,7 @@
                         <outlet property="frontBackBtn" destination="u5H-a7-0wz" id="LrJ-sD-Ofi"/>
                         <outlet property="normalShinyBtn" destination="fsW-qR-lIP" id="iUg-VK-8Tb"/>
                         <outlet property="spriteImageView" destination="Jah-Ld-zsQ" id="fLf-Cs-vPz"/>
-                        <outlet property="spriteStackView" destination="1ms-3h-Xwo" id="AIn-fD-Jmh"/>
+                        <outlet property="spriteStackView" destination="1ms-3h-Xwo" id="TqX-UH-RXo"/>
                         <outlet property="tableView" destination="rlw-h3-zAC" id="bUC-xg-Vph"/>
                     </connections>
                 </viewController>

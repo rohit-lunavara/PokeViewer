@@ -31,7 +31,6 @@ Support for all iOS devices (13.0+) using AutoLayout (includes UI changes based 
 
 # Future Scope
 
-- Filter using 
 - Show additional information for Abilities, Stats, etc in a **WKWebView**.
 - Share Pokemon information using **UIActivityViewController**.
 - Customize **UITableView** and **UITableViewCell** design to make it look like a Pokedex.

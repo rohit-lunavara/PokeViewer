@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UKU-SY-1Va">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="xSp-pa-D3h">
+            <objects>
+                <navigationController id="UKU-SY-1Va" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="OWg-Y3-r0g"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Re3-qe-68H">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bUf-9a-tel" kind="relationship" relationship="rootViewController" id="SX0-6I-B5U"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GOL-9W-ATk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-388" y="-1051"/>
+        </scene>
+        <!--Pokemon Master View Controller-->
+        <scene sceneID="Aec-Fi-cVf">
+            <objects>
+                <tableViewController id="bUf-9a-tel" customClass="PokemonMasterViewController" customModule="PokeViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6or-XK-MZ1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="prominent" showsCancelButton="YES" id="jnW-FB-cNd">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            <scopeButtonTitles>
+                                <string>Title</string>
+                                <string>Title</string>
+                            </scopeButtonTitles>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PokeCell" id="YgJ-sT-3Ya">
+                                <rect key="frame" x="0.0" y="84" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YgJ-sT-3Ya" id="HVh-o6-UK4">
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bUf-9a-tel" id="5uO-9T-tVW"/>
+                            <outlet property="delegate" destination="bUf-9a-tel" id="9GW-z7-xsa"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="IfE-2h-jxo"/>
+                    <connections>
+                        <outlet property="pokemonNameSearchBar" destination="jnW-FB-cNd" id="auP-4I-Mp3"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EbA-nZ-kIN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="451" y="-1051"/>
+        </scene>
+        <!--Pokemon Detail View Controller-->
+        <scene sceneID="CA2-IF-J8H">
+            <objects>
+                <viewController storyboardIdentifier="PokemonDetailViewController" id="smN-yR-k4V" customClass="PokemonDetailViewController" customModule="PokeViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cGo-ct-gvY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="tmX-kk-LD9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="1ms-3h-Xwo">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="408.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jah-Ld-zsQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="318.5"/>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="itB-m1-a4t">
+                                                <rect key="frame" x="0.0" y="319.5" width="414" height="89"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5H-a7-0wz">
+                                                        <rect key="frame" x="20" y="20" width="177" height="49"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                                        <state key="normal" title="Back"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                        </variation>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="flipSpriteTapped" destination="smN-yR-k4V" eventType="touchUpInside" id="cTo-pw-syc"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsW-qR-lIP">
+                                                        <rect key="frame" x="217" y="20" width="177" height="49"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                                        <state key="normal" title="Shiny"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                        </variation>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="flipSpriteColorTapped" destination="smN-yR-k4V" eventType="touchUpInside" id="vWf-d8-r1v"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="20" left="20" bottom="20" right="20"/>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="itB-m1-a4t" secondAttribute="trailing" id="1Oo-ze-xkQ"/>
+                                            <constraint firstItem="itB-m1-a4t" firstAttribute="leading" secondItem="1ms-3h-Xwo" secondAttribute="leading" id="BnM-mz-dg2"/>
+                                            <constraint firstAttribute="trailing" secondItem="Jah-Ld-zsQ" secondAttribute="trailing" id="GC7-hV-ji7"/>
+                                            <constraint firstItem="Jah-Ld-zsQ" firstAttribute="top" secondItem="1ms-3h-Xwo" secondAttribute="top" id="Geq-U9-Oot"/>
+                                            <constraint firstAttribute="bottom" secondItem="itB-m1-a4t" secondAttribute="bottom" id="YTU-sE-Mbl"/>
+                                            <constraint firstItem="Jah-Ld-zsQ" firstAttribute="leading" secondItem="1ms-3h-Xwo" secondAttribute="leading" id="xNY-1V-neW"/>
+                                        </constraints>
+                                    </stackView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rlw-h3-zAC">
+                                        <rect key="frame" x="0.0" y="409.5" width="414" height="408.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </tableView>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                                <variation key="heightClass=regular-widthClass=regular" axis="vertical"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tmX-kk-LD9" firstAttribute="bottom" secondItem="68M-dP-Nwa" secondAttribute="bottom" id="Akz-T4-9og"/>
+                            <constraint firstItem="tmX-kk-LD9" firstAttribute="top" secondItem="68M-dP-Nwa" secondAttribute="top" id="Cmb-GW-FP7"/>
+                            <constraint firstItem="tmX-kk-LD9" firstAttribute="leading" secondItem="68M-dP-Nwa" secondAttribute="leading" id="Lx4-PZ-Rf5"/>
+                            <constraint firstItem="68M-dP-Nwa" firstAttribute="trailing" secondItem="tmX-kk-LD9" secondAttribute="trailing" id="pRG-uI-xEb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="68M-dP-Nwa"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WRU-BE-qgL"/>
+                    <connections>
+                        <outlet property="frontBackBtn" destination="u5H-a7-0wz" id="LrJ-sD-Ofi"/>
+                        <outlet property="normalShinyBtn" destination="fsW-qR-lIP" id="iUg-VK-8Tb"/>
+                        <outlet property="spriteImageView" destination="Jah-Ld-zsQ" id="fLf-Cs-vPz"/>
+                        <outlet property="spriteStackView" destination="1ms-3h-Xwo" id="AIn-fD-Jmh"/>
+                        <outlet property="tableView" destination="rlw-h3-zAC" id="bUC-xg-Vph"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dN4-zL-wCb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1308.6956521739132" y="-1051.3392857142858"/>
+        </scene>
+    </scenes>
+</document>

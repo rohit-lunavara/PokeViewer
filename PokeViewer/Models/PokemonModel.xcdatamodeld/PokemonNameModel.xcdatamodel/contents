@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Abilities" representedClassName="Abilities" syncable="YES" codeGenerationType="class"/>
+    <entity name="Pokemon" representedClassName=".Pokemon" syncable="YES" codeGenerationType="category">
+        <attribute name="id" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+    </entity>
+    <entity name="PokemonName" representedClassName=".PokemonName" syncable="YES" codeGenerationType="category">
+        <attribute name="name" attributeType="String"/>
+        <attribute name="url" attributeType="String"/>
+    </entity>
+    <entity name="Sprites" representedClassName="Sprites" syncable="YES" codeGenerationType="class"/>
+    <entity name="Stats" representedClassName="Stats" syncable="YES" codeGenerationType="class"/>
+    <entity name="Types" representedClassName="Types" syncable="YES" codeGenerationType="class"/>
+    <elements>
+        <element name="PokemonName" positionX="-193.83984375" positionY="-247.4453125" width="128" height="73"/>
+        <element name="Pokemon" positionX="-194.203125" positionY="-146.1328125" width="128" height="73"/>
+        <element name="Abilities" positionX="-429.03125" positionY="46.79296875" width="128" height="43"/>
+        <element name="Stats" positionX="-280.53515625" positionY="46.265625" width="128" height="43"/>
+        <element name="Types" positionX="-127.6875" positionY="47.70703125" width="128" height="43"/>
+        <element name="Sprites" positionX="20.2734375" positionY="47.51953125" width="128" height="43"/>
+    </elements>
+</model>

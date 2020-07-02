@@ -1,3 +1,5 @@
+![App Icon](https://github.com/rohit-lunavara/PokeViewer/blob/master/PokeViewer/Assets.xcassets/AppIcon.appiconset/180.png?raw=true)
+
 # PokeViewer
 
 An iOS application which acts like a Pokedex where you can view Pokemon sprites, abilities and stats.
@@ -15,6 +17,8 @@ Support for all iOS devices (13.0+) using AutoLayout (includes UI changes based 
 - **Grand Central Dispatch** to enhance user experience by scheduling download tasks on **Background Queue**.
 
 # Screenshots
+
+- TODO
 
 # Architecture
 
@@ -41,4 +45,5 @@ Support for all iOS devices (13.0+) using AutoLayout (includes UI changes based 
 
 # Credits
 
+- App Icon designed by me using [**Canva**](https://www.canva.com/).
 - [**PokeAPI**](https://pokeapi.co/) for providing a free API for Pokemon data.

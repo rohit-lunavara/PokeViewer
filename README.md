@@ -33,17 +33,17 @@ Support for all iOS devices (13.0+) using AutoLayout (includes UI changes based 
 
 ## Start
 
-![Start](https://github.com/rohit-lunavara/PokeViewer/blob/master/Device%20Mockups/Start_iphone_iphone.png?raw=true)
+![Start](https://github.com/rohit-lunavara/PokeViewer/blob/master/Device%20Mockups/Start_iphone.png?raw=true)
 ![Start](https://github.com/rohit-lunavara/PokeViewer/blob/master/Device%20Mockups/Start_ipad.png?raw=true)
 
 ## Search
 
-![Search](https://github.com/rohit-lunavara/PokeViewer/blob/master/Device%20Mockups/Search_iphone_iphone.png?raw=true)
+![Search](https://github.com/rohit-lunavara/PokeViewer/blob/master/Device%20Mockups/Search_iphone.png?raw=true)
 ![Search](https://github.com/rohit-lunavara/PokeViewer/blob/master/Device%20Mockups/Search_ipad.png?raw=true)
 
 ## Detail
 
-![Detail](https://github.com/rohit-lunavara/PokeViewer/blob/master/Device%20Mockups/Detail_iphone_iphone.png?raw=true)
+![Detail](https://github.com/rohit-lunavara/PokeViewer/blob/master/Device%20Mockups/Detail_iphone.png?raw=true)
 ![Detail](https://github.com/rohit-lunavara/PokeViewer/blob/master/Device%20Mockups/Detail_ipad.png?raw=true)
 
 ## Change Sprite

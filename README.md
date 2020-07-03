@@ -4,6 +4,8 @@
 
 An iOS application which acts like a Pokedex where you can view Pokemon sprites, abilities and stats.
 
+Uses an MVC-N architecture instead of the standard MVC to centralize all the Networking for the application.
+
 Support for all iOS devices (13.0+) using AutoLayout (includes UI changes based on iOS device size classes) and macOS (10.15+) using Mac Catalyst.
 
 # Technologies and Frameworks Used

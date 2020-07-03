@@ -16,10 +16,6 @@ Support for all iOS devices (13.0+) using AutoLayout (includes UI changes based 
 - **UISearchBar** to filter using Pokemon names.
 - **Grand Central Dispatch** to enhance user experience by scheduling download tasks on **Background Queue**.
 
-# Screenshots
-
-- TODO
-
 # Architecture
 
 ![Architecture](https://github.com/rohit-lunavara/PokeViewer/blob/master/PokeViewer-Class-Diagram.svg?raw=true)
@@ -28,10 +24,32 @@ Support for all iOS devices (13.0+) using AutoLayout (includes UI changes based 
 - Custom **RequestManager** class handles **URLRequests**, **URLCache** and provides callbacks for success and failure to classes implementing the **RequestManagerDelegate** protocol.
 - Optimizing performance by reducing the number of **URLRequests** via **Lazy Loading** the Pokemon list (loading only 100 Pokemon at a time) and **Caching** as mentioned above.
 
-# Miscellaneous
+# Code Organization
 
 - All **Constants** such as **UIColors**, **ReuseIdentifiers**, **Static URLs**, etc are stored in the **Constants** file.
 - Extension for **UIColor** to accept hex codes and blend two different **UIColors**.
+
+# Screenshots
+
+## Start
+
+![Start](https://github.com/rohit-lunavara/PokeViewer/blob/master/Device%20Mockups/Start_iphone_iphone.png?raw=true)
+![Start](https://github.com/rohit-lunavara/PokeViewer/blob/master/Device%20Mockups/Start_ipad.png?raw=true)
+
+## Search
+
+![Search](https://github.com/rohit-lunavara/PokeViewer/blob/master/Device%20Mockups/Search_iphone_iphone.png?raw=true)
+![Search](https://github.com/rohit-lunavara/PokeViewer/blob/master/Device%20Mockups/Search_ipad.png?raw=true)
+
+## Detail
+
+![Detail](https://github.com/rohit-lunavara/PokeViewer/blob/master/Device%20Mockups/Detail_iphone_iphone.png?raw=true)
+![Detail](https://github.com/rohit-lunavara/PokeViewer/blob/master/Device%20Mockups/Detail_ipad.png?raw=true)
+
+## Change Sprite
+
+![Change Sprite](https://github.com/rohit-lunavara/PokeViewer/blob/master/Device%20Mockups/Detail-Change-Sprite_iphone.png?raw=true)
+![Change Sprite](https://github.com/rohit-lunavara/PokeViewer/blob/master/Device%20Mockups/Detail-Change-Sprite_ipad.png?raw=true
 
 # Future Scope
 

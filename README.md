@@ -33,11 +33,6 @@ Support for all iOS devices (13.0+) using AutoLayout (includes UI changes based 
 
 # Screenshots
 
-## Start
-
-![Start](https://github.com/rohit-lunavara/PokeViewer/blob/master/Device%20Mockups/Start_iphone.png?raw=true)
-![Start](https://github.com/rohit-lunavara/PokeViewer/blob/master/Device%20Mockups/Start_ipad.png?raw=true)
-
 ## Search
 
 ![Search](https://github.com/rohit-lunavara/PokeViewer/blob/master/Device%20Mockups/Search_iphone.png?raw=true)
